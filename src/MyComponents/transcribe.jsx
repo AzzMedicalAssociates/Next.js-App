@@ -2,7 +2,7 @@ const fs = require("fs");
 const OpenAI = require("openai");
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
 });
 
 async function main() {
